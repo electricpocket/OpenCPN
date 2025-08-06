@@ -1,4 +1,4 @@
-= Building OpenCPN for Android
+= Building OpenCPN for Android on MacOS
 image::opencpn_dev_android_0.png[width=50]
 
 These instructions describe how to build OpenCPN for Android on Ubuntu 24.04.
@@ -54,7 +54,7 @@ export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 Get path to Android NDK:
 
 ----
-~/Android/Sdk/cmdline-tools/latest/bin/sdkmanager --list |grep ndk
+~/Library/Android/Sdk/cmdline-tools/latest/bin/sdkmanager --list |grep ndk
 ----
 
 Set environment variables:
