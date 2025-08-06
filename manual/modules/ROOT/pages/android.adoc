@@ -80,6 +80,7 @@ android_x86_64="$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/darwin-x86_64"
 ln -sf $android_x86_64/bin/llvm-ar \
      $android_x86_64/bin/aarch64-linux-android-ar
 ----
+ln -sf $ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/darwin-x86_64 $ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64
 
 == Building the Core Library
 
