@@ -60,10 +60,10 @@ Get path to Android NDK:
 Set environment variables:
 
 ----
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=~/Library/Android/Sdk
 export ANDROID_NDK_VERSION=$(ls $ANDROID_SDK_ROOT/ndk | sort -V | tail -1)
 export ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/${ANDROID_NDK_VERSION}
-export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/darwin-x86_64:$PATH
 
 # API 30: Android 11 (2020)
 # API 31: Android 12 (2021)
@@ -76,7 +76,7 @@ export OCPN_ANDROID_API=33  # Minimum Android API level to target
 Create required NDK symlink:
 
 ----
-android_x86_64="$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64"
+android_x86_64="$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/darwin-x86_64"
 ln -sf $android_x86_64/bin/llvm-ar \
      $android_x86_64/bin/aarch64-linux-android-ar
 ----
