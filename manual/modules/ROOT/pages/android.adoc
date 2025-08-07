@@ -31,7 +31,7 @@ sudo apt install -y \
   default-jdk
 
 ----
-brew install liblunasvg
+brew install lunasvg
 brew install libjpeg
 
 
