@@ -31,6 +31,9 @@ sudo apt install -y \
   default-jdk
 
 ----
+brew install liblunasvg
+brew install libjpeg
+
 
 Get Java installation path:
 
@@ -113,6 +116,7 @@ mkdir build-android-arm64
 cd build-android-arm64
 cmake \
   -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
   -DOCPN_TARGET_TUPLE="Android-arm64;${OCPN_ANDROID_API};arm64" \
   -Dtool_base="$ANDROID_SDK_ROOT/ndk/${ANDROID_NDK_VERSION}/toolchains/llvm/prebuilt/darwin-x86_64" \
   ..

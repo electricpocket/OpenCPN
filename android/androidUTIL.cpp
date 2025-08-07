@@ -4196,7 +4196,7 @@ void prepareAndroidStyleSheets() {
 
   int slider_handle_width = g_Platform->GetDisplayDPmm() * 6;
 
-  char sb[400];
+  char sb[600];
   snprintf(
       sb, sizeof(sb),
       "QSlider::groove { border: 1px solid #999999;  background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E6E6E6, stop:1 #EEEEEE); } \
@@ -4210,7 +4210,7 @@ void prepareAndroidStyleSheets() {
 
   // add the checkbox specification
   int cbSize = 30 * getAndroidDisplayDensity();
-  char cb[400];
+  char cb[600];
 
   // icons
   // Checked box
